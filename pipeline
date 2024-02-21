@@ -5,6 +5,9 @@ pipeline
 			stage ("Build") {
 				steps {
 					echo "this is Build"
+					sh "git init"
+					sh "git pull https://github.com/BharathSukka/sixth.git"
+					sh "ls"
 					}
 				}
 
